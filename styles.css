@@ -8,6 +8,15 @@
     background-color: #242424;
 }
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -136,15 +145,6 @@ nav {
     height: calc(100vh - 100px);
 }
 
-.aboutme__info {
-    width: 100%;
-    max-width: 1200px;
-    margin: 128px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .manish__photo--mask {
     width: 300px;
     min-width: 300px;
@@ -188,6 +188,16 @@ nav {
     width: 100%;
 }
 
+.aboutme__info {
+    width: 100%;
+    max-width: 1200px;
+    margin: 128px auto;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .aboutme__info--container{
     width: 700px;
     margin: 0 64px;
@@ -213,6 +223,7 @@ nav {
     width: 100%;
     max-width: 1200px;
     margin: 128px auto;
+    padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -249,8 +260,9 @@ nav {
 }
 
 .photogarphy-para {
-    margin: 24px 24px 24px 24px;
-    width: 650px
+    margin: 24px;
+    width: 650px;
+    text-align: center;
 }
 
 .photogarphy {
@@ -451,3 +463,130 @@ footer {
 }
 
 /* SMALL PHONES TABLETS LARGE PHONES */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px
+    }
+
+    .nav__link--list {
+        display: none;
+    }
+
+    .nav__link--list.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .aboutme__info {
+        
+        flex-direction: column;
+    }
+
+    .aboutme__info--container{
+        margin-top: 60px;
+        padding: 0 20px;
+        
+    }
+
+    .aboutme__info--heading,
+    .aboutme__info--paragraph {
+        text-align: center;
+    }
+
+    .my-career__info {
+        padding: 0 18px;
+    }
+
+    .manish__photo--mask {
+        max-width: 200px;
+        min-width: 200px;
+        max-height: 200px;
+    }
+
+    .manish__photo {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .aboutme__info--container {
+        width: 280px;
+    }
+
+    .my-career__info {
+        flex-direction: column;
+    }
+
+    .my-career__info--container {
+        text-align: center;
+        width: 280px;
+    }
+
+    .my-career__info--heading {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .photogarphy-para {
+        width: 280px;
+    }
+
+    .picture,
+    .photography__picture--item {
+        height: 75px;
+    }
+
+    .photography__picture--item {
+        margin: 4px;
+    }
+
+    .photogarphy {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .aboutme__info--container {
+        width: 280px;
+    }
+
+    .my-career__info {
+        flex-direction: column;
+    }
+
+    .my-career__info--container {
+        text-align: center;
+        width: 280px;
+    }
+
+    .my-career__info--heading {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .photogarphy-para {
+        width: 280px;
+    }
+
+    .picture,
+    .photography__picture--item {
+        height: 100px;
+    }
+
+    .photography__picture--item {
+        margin: 6px;
+    }
+
+    .photogarphy {
+        margin-bottom: 5px;
+    }
+}
